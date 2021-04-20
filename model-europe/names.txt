@@ -1,0 +1,7 @@
+AFR
+OOA
+EHG
+ANA
+EUR
+YAM
+YAM_migr
