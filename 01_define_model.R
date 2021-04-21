@@ -55,7 +55,7 @@ anatolia <- region(
 ############################################
 
 afr <- population(
-  "AFR", parent = "ancestor", N = 10000,
+  "AFR", parent = "ancestor", N = 5000,
   world = world, region = africa
 )
 
@@ -157,7 +157,7 @@ dev.off()
 # run the simulation
 ######################################################################
 run(
-  model, burnin = 1e6, sim_length = 55000,
+  model, burnin = 5e6, sim_length = 55000,
   seq_length = 100e6, recomb_rate = 1e-8,
   max_interaction = 200, spread = 50,
   save_locations = TRUE,
