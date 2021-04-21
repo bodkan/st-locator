@@ -1,4 +1,4 @@
-devtools::install_github("bodkan/spammr", ref = "cf4fb49")
+devtools::install_github("bodkan/spammr", ref = "d6f95bf")
 
 library(spammr)
 
@@ -15,6 +15,7 @@ world <- map(
 ######################################################################
 # define broader geographic regions
 ######################################################################
+
 africa <- region(
   "Africa", world,
   coords = list(
@@ -156,6 +157,7 @@ dev.off()
 ######################################################################
 # run the simulation
 ######################################################################
+
 run(
   model, burnin = 5e6, sim_length = 55000,
   seq_length = 100e6, recomb_rate = 1e-8,
