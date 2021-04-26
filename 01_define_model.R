@@ -1,5 +1,3 @@
-devtools::install_github("bodkan/spammr", ref = "d6f95bf")
-
 library(spammr)
 
 ######################################################################
@@ -162,7 +160,7 @@ run(
   model, burnin = 5e6, sim_length = 55000,
   seq_length = 100e6, recomb_rate = 1e-8,
   max_interaction = 200, spread = 50,
-  save_locations = TRUE,
+  save_locations = T, keep_pedigrees = T, ts_recording = T,
   output_prefix = "results/europe",
   how = "dry-run", 
 )
